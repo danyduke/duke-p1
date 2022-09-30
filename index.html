@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +8,29 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <nav class="navbar">
+      <a href="#" class="logo">danyduke</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="accueil">Accueil</a></li>
+          <li><a href="préparation">Préparation</a></li>
+          <li><a href="entretien">Entretien</a></li>
+        </ul>
+      </div>
+      <img
+        src="p1-image/menu.png"
+        alt="menu hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
     <header></header>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>
