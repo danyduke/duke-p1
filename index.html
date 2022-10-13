@@ -4,33 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>danyduke</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>danyduke</title>
   </head>
   <body>
-    <nav class="navbar">
+    <header>
       <a href="#" class="logo">danyduke</a>
       <div class="nav-links">
         <ul>
-          <li><a href="accueil">Accueil</a></li>
-          <li><a href="préparation">Préparation</a></li>
-          <li><a href="entretien">Entretien</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="preparation.html">Préparation</a></li>
+          <li><a href="entretien.html">Entretien</a></li>
         </ul>
       </div>
-      <img
-        src="p1-image/menu.png"
-        alt="menu hamburger"
-        class="menu-hamburger"
-      />
-    </nav>
-    <header></header>
+      <div class="menu-hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+    <section class="banner"></section>
+    <section class="about">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur?
+        Enim atque libero id odit, quo blanditiis quos, vel alias maiores
+        reiciendis recusandae aliquid fuga labore voluptates dignissimos,
+        expedita architecto sunt impedit! Dolor placeat consectetur voluptatum
+        autem? Quod tempora natus aliquam voluptates sint in quidem nemo, beatae
+        iusto ratione nihil.
+      </p>
+    </section>
+    <div class="contact">
+      <form class="contact-form">
+        <h2>Contactez-nous</h2>
+        <input type="text" class="contact-text" placeholder="Votre Nom" />
+        <input type="email" class="contact-text" placeholder="Votre Email" />
+        <textarea
+          class="contact-text area"
+          placeholder="Votre Message"
+        ></textarea>
+        <button class="btn">Envoyer</button>
+      </form>
+    </div>
+    <footer>
+    <ul class = "social-media">
+     <li class="icon" a href="https://fr-fr.facebook.com/"><img src="p1-image/media-black/facebook-black.svg" alt="lien facebook"></a></li>
+     <li class="icon" a href="https://www.instagram.com/?hl=fr"><img src="p1-image/media-black/instagram-black.svg" alt="lien instagram"></a></li>
+     <li class="icon" a href="https://twitter.com/?lang=fr"><img src="p1-image/media-black/twitter-black.svg" alt="lien twitter"></a></li>
+     <li class="icon" a href="https://www.youtube.com/"><img src="p1-image/media-black/youtube-black.svg" alt="lien youtube"></a></li>
+    </ul>
+    <div class="copyright">Tous droits réservés © Duckman Danyel, Nantes, France | 2022</div>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  <script>
-    const menuHamburger = document.querySelector(".menu-hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    menuHamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-menu");
-    });
-  </script>
 </html>
