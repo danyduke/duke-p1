@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  --main-color: rgb(200, 151, 13);
 }
 
 body {
@@ -50,7 +51,7 @@ header .menu-hamburger {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: rgba(128, 110, 110, 0.3);
+  background-color: rgba(81, 64, 31, 0.406);
   backdrop-filter: blur(7px);
   width: 100%;
   height: 100vh;
@@ -82,7 +83,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: rgb(255, 136, 0);
+  color: var(--main-color);
 }
 
 /*menu burger */
@@ -120,8 +121,9 @@ header ul li a:hover {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(p1-image/Opel-Kadett-C-Caravan-Tracktool-Umbau-Tuning-Restomod-1.jpg);
+  background: url(p1-image/garage-mobile.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 header.sticky .logo {
@@ -136,7 +138,7 @@ header.sticky .logo {
 .about {
   height: 100vh;
   width: 100%;
-  background-image: url(p1-image/drift-mobile.jpg);
+  background-image: url(p1-image/900ss.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -154,6 +156,11 @@ header.sticky .logo {
   width: 100%;
   background-color: grey;
 }
+
+.img-form {
+  display: none;
+}
+
 .contact-form {
   height: 100%;
   padding: 120px 30px 0 30px;
@@ -164,7 +171,7 @@ header.sticky .logo {
 }
 
 .contact-form h2 {
-  padding-bottom: 2em;
+  padding-bottom: 1.4em;
   font-size: 2em;
 }
 
@@ -172,7 +179,7 @@ header.sticky .logo {
   padding: 0.5em 1em;
   width: 100%;
   outline: none;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid var(--main-color);
   border-radius: 15px;
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1em;
@@ -181,12 +188,7 @@ header.sticky .logo {
 }
 
 .contact-text:hover {
-  background-color: rgba(202, 171, 132, 0.708);
-}
-
-.contact-text {
-  background-color: white;
-  border: 2px solid rgba(255, 136, 0, 0.46);
+  background-color: rgba(207, 177, 55, 0.374);
 }
 
 .area {
@@ -199,8 +201,8 @@ header.sticky .logo {
   font-size: 1.1em;
   cursor: pointer;
   border-radius: 15px;
-  background-color: white;
-  border: 2px solid rgba(255, 136, 0, 0.46);
+  background-color: rgba(230, 230, 230, 0.6);
+  border: 2px solid var(--main-color);
 }
 
 /* second page */
@@ -242,7 +244,7 @@ header.sticky .logo {
 footer {
   height: 15vh;
   width: 100%;
-  background-color: rgb(255, 136, 0);
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
 }
@@ -307,8 +309,33 @@ footer .icon {
 
   /* first page */
 
+  .banner {
+    background: url(p1-image/garage-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   .about p {
     padding: 180px 50px;
+  }
+
+  .contact {
+    display: flex;
+  }
+  .img-form {
+    display: initial;
+    width: auto;
+  }
+
+  .contact .card {
+    padding: 12em 20px 20px 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .area {
+    min-height: 250px;
   }
 
   /* second page */
