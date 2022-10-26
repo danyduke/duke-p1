@@ -126,6 +126,7 @@ header ul li a:hover {
 .banner {
   position: relative;
   width: 100%;
+  min-width: 360px;
   height: 100vh;
   background: url(p1-image/garage-mobile.jpg);
   background-size: cover;
@@ -204,7 +205,6 @@ header.sticky .logo {
 }
 
 .btn {
-  margin-top: 1.5em;
   width: 100px;
   font-size: 1.1em;
   cursor: pointer;
