@@ -353,10 +353,11 @@ footer .icon {
 
   .contact-form {
     width: 100%;
+    padding: 140px 30px 0 30px;
   }
 
   .area {
-    min-height: 250px;
+    min-height: 160px;
   }
 
   /* second page */
